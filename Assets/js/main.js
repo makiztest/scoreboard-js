@@ -53,5 +53,5 @@ resetBtn.addEventListener("click", function() {
     visitorScore = 0;
     homeScoreDisplay.textContent = homeScore;
     visitorScoreDisplay.textContent = visitorScore;
-    winner.remove();
+    gameOver = false;
 })
