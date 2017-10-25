@@ -2,6 +2,8 @@ var homeBtn = document.querySelector(".home-btn");
 var visitorBtn = document.querySelector(".visitor-btn");
 var homeScoreDisplay = document.querySelector(".homeScore");
 var visitorScoreDisplay = document.querySelector(".visitorScore");
+var winner = document.querySelector(".winner");
+var blink = false;
 var homeScore = 0;
 var visitorScore = 0;
 var gameOver = false;
@@ -12,7 +14,10 @@ homeBtn.addEventListener("click", function() {
     if(!gameOver) {
         homeScore++;
         if(homeScore === winningScore) {
-            console.log("home")
+            winner.textContent = "home wins";
+            winner.classList.add("winner");
+            winnerBlink();
+            gameOver = true;
         }
         homeScoreDisplay.textContent = homeScore;
     }
@@ -23,8 +28,19 @@ visitorBtn.addEventListener("click", function() {
     if(!gameOver) {
         visitorScore++;
         if(visitorScore === winningScore) {
-            console.log("visitor")
+            winner.textContent = "visitor wins";
+            winner.classList.add("winner");
+            winnerBlink();
+            gameOver = true;
         }
         visitorScoreDisplay.textContent = visitorScore;
     }
 })
+
+function winnerBlink() {
+    if(!blink) {
+        setInterval(function() {
+            winner.classList.toggle("winnerBlink");
+        }, 800)
+    }
+}

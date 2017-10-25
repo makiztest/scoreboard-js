@@ -90,10 +90,14 @@ h1 {
     font-size: 100px;
 }
 
-.win {
+.winner {
     font-size: 45px;
     color: rgb(255, 194, 10);
     text-transform: uppercase;
+}
+
+.winnerBlink {
+    color: rgb(35, 37, 49);
 }
 
 .settings {
