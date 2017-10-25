@@ -90,6 +90,12 @@ h1 {
     font-size: 100px;
 }
 
+.win {
+    font-size: 45px;
+    color: rgb(255, 194, 10);
+    text-transform: uppercase;
+}
+
 .settings {
     width: 1000px;
     text-align: center;
