@@ -47,6 +47,7 @@ visitorBtn.addEventListener("click", function() {
 
  bestOfScoreInput.addEventListener("change", function() {
      bestOfScoreInputDisplay.textContent = bestOfScoreInput.value;
+     winningScore = bestOfScoreInput.value;
  })
 
 var stopBlink = function() {
