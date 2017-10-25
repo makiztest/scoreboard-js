@@ -4,6 +4,7 @@ var resetBtn = document.querySelector(".reset");
 var homeScoreDisplay = document.querySelector(".homeScore");
 var visitorScoreDisplay = document.querySelector(".visitorScore");
 var winner = document.querySelector(".winner");
+var bestOfScoreInput = document.querySelector("input[type='number']");
 var homeScore = 0;
 var visitorScore = 0;
 var gameOver = false;
@@ -41,6 +42,10 @@ visitorBtn.addEventListener("click", function() {
         visitorScoreDisplay.textContent = visitorScore;
     }
 })
+
+ bestOfScoreInput.addEventListener("change", function() {
+     console.log(bestOfScoreInput.value)
+ })
 
 var stopBlink = function() {
     clearInterval(winnerBlink);
