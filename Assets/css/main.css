@@ -1,0 +1,132 @@
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: rgb(46, 47, 64);
+    position: relative;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+}
+
+p {
+    margin: 0 0 0.5rem;
+}
+
+.container {
+    width: 1000px;
+    border: 1px solid thistle;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(220, 91, 82);
+}
+
+.score-box-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.score-box {
+    box-sizing: border-box;
+    width: 380px;
+    height: 500px;
+    background: rgb(35, 37, 49);
+    position: relative;
+}
+
+.score {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 300px;
+    display: block;
+}
+
+.add-score {
+    background: rgb(220, 91, 82);
+    text-align: center;
+    color: rgb(219, 219, 221);
+    font-size: 50px;
+    position: absolute;
+    display: block;
+    margin-top: 40px; 
+    width: 100%;
+}
+
+.players {
+    padding: 10px;
+    text-align: center;
+    background:rgb(46, 47, 64);
+    color: rgb(219, 219, 221);
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.best-of {
+    width: 200px;
+    padding-top: 240px;
+    text-align: center;
+}
+
+.best-of p {
+    color: rgba(219, 219, 221, 0.5);
+    margin: 0;
+}
+
+.best-of h3 {
+    color: rgb(220, 91, 82);
+    font-size: 100px;
+}
+
+.settings {
+    width: 1000px;
+    text-align: center;
+    margin: 40px 0;
+    padding-top: 50px;
+}
+
+.set-game {
+    background: rgb(35, 37, 49);
+    color: rgb(219, 219, 221);
+    padding: 10px 20px;
+}
+
+input {
+    background: rgb(220, 91, 82);
+    color: rgb(219, 219, 221);
+    width: 60px;
+    padding: 10px 20px;
+    border: none;
+}
+
+input:focus {
+    background: rgb(219, 219, 221);
+    color: rgb(35, 37, 49);
+    outline: none;
+}
+
+button {
+    background: rgb(35, 37, 49);
+    color: rgb(219, 219, 221);
+    border: none;
+    padding: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+button:focus {
+    color: rgb(219, 219, 221);
+    outline: none;
+}
