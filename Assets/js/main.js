@@ -5,6 +5,7 @@ var homeScoreDisplay = document.querySelector(".homeScore");
 var visitorScoreDisplay = document.querySelector(".visitorScore");
 var winner = document.querySelector(".winner");
 var bestOfScoreInput = document.querySelector("input[type='number']");
+var bestOfScoreInputDisplay = document.querySelector("h3");
 var homeScore = 0;
 var visitorScore = 0;
 var gameOver = false;
@@ -15,6 +16,7 @@ homeBtn.addEventListener("click", function() {
     //add score to home
     if(!gameOver) {
         homeScore++;
+        console.log(homeScore, winningScore)
         if(homeScore === winningScore) {
             winner.textContent = "home wins";
             winner.classList.add("winner");
@@ -44,7 +46,7 @@ visitorBtn.addEventListener("click", function() {
 })
 
  bestOfScoreInput.addEventListener("change", function() {
-     console.log(bestOfScoreInput.value)
+     bestOfScoreInputDisplay.textContent = bestOfScoreInput.value;
  })
 
 var stopBlink = function() {
