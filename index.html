@@ -5,32 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scoreboard-Js</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
     <div class="container">
         <h1>scoreboard</h1>
-        <div class="score-box1">
-            <div>Home</div>
-            <div>1</div>
-            <div>+</div>
-        </div>
+        <div class="score-box-wrapper">
+            <div class="score-box">
+                <div class="players">Home</div>
+                <div class="score homeScore">0</div>
+                <div class="add-score home-btn">+</div>
+            </div>
 
-        <div class="best-of">
-            <div><p>BEST OF</p></div>
-            <div><h3>5</h3></div>
-        </div>
+            <div class="best-of">
+                <div><p>BEST OF</p></div>
+                <div><h3>5</h3></div>
+            </div>
 
-        <div class="score-box1">
-            <div>Home</div>
-            <div>1</div>
-            <div>+</div>
+            <div class="score-box">
+                <div class="players visitor">Visitor</div>
+                <div class="score visitorScore">0</div>
+                <div class="add-score visitor-btn">+</div>
+            </div>
         </div>
 
         <div class="settings">
-            <span>SET GAME</span>
-            <input type="number">
-            <button>reset</button>
+            <span class="set-game">SET GAME</span>
+            <input type="number" placeholder="5">
+            <button class="reset">reset</button>
         </div>
     </div> <!-- container -->
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
