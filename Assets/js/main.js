@@ -45,3 +45,10 @@ function winnerBlink() {
         }, 800)
     }
 }
+
+resetBtn.addEventListener("click", function() {
+    homeScore = 0;
+    visitorScore = 0;
+    homeScoreDisplay.textContent = homeScore;
+    visitorScoreDisplay.textContent = visitorScore;
+})
