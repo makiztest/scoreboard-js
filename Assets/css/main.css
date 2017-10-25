@@ -61,6 +61,11 @@ h1 {
     display: block;
     margin-top: 40px; 
     width: 100%;
+    cursor: pointer;
+}
+
+.add-score:hover {
+    background: rgb(248, 91, 86);
 }
 
 .players {
@@ -134,9 +139,14 @@ button {
     padding: 10px;
     font-weight: lighter;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 button:focus {
     color: rgb(219, 219, 221);
     outline: none;
+}
+
+button:hover {
+    background: rgb(71, 74, 94);
 }

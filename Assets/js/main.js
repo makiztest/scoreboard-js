@@ -1,5 +1,6 @@
 var homeBtn = document.querySelector(".home-btn");
 var visitorBtn = document.querySelector(".visitor-btn");
+var resetBtn = document.querySelector(".reset");
 var homeScoreDisplay = document.querySelector(".homeScore");
 var visitorScoreDisplay = document.querySelector(".visitorScore");
 var winner = document.querySelector(".winner");
