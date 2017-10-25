@@ -16,7 +16,6 @@ homeBtn.addEventListener("click", function() {
     //add score to home
     if(!gameOver) {
         homeScore++;
-        console.log(homeScore, winningScore)
         if(homeScore === winningScore) {
             winner.textContent = "home wins";
             winner.classList.add("winner");
@@ -46,8 +45,9 @@ visitorBtn.addEventListener("click", function() {
 })
 
  bestOfScoreInput.addEventListener("change", function() {
-     bestOfScoreInputDisplay.textContent = bestOfScoreInput.value;
-     winningScore = Number(bestOfScoreInput.value);
+     bestOfScoreInputDisplay.textContent = this.value;
+     winningScore = Number(this.value);
+     reset();
  })
 
 var stopBlink = function() {
@@ -55,6 +55,10 @@ var stopBlink = function() {
 }
 
 resetBtn.addEventListener("click", function() {
+    reset();
+})
+
+function reset() {
     homeScore = 0;
     visitorScore = 0;
     homeScoreDisplay.textContent = homeScore;
@@ -62,4 +66,4 @@ resetBtn.addEventListener("click", function() {
     winner.textContent = "";
     stopBlink();
     gameOver = false;
-})
+}
